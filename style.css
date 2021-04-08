@@ -14,7 +14,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/assets/background.jpg);
+    background-image: url(assets/background.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -55,7 +55,7 @@ i {
     height: 35%;
     background-color: black;
     position: relative;
-    background-image: url(/assets/Background.jpg);
+    background-image: url(assets/Background.jpg);
     background-size: 100%;
 }
 
