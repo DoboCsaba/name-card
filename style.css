@@ -1,0 +1,128 @@
+/* --- CSS Reset ---*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+}
+
+/* --- Base element style's --- */
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/assets/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Rubik, 'Times New Roman', serif;
+}
+
+li {
+    display: inline;
+}
+
+ul {
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+i {
+    margin-right: .5rem;
+    color: gray;
+}
+
+
+/* --- Class style's --- */
+
+.profile-card {
+    position: relative;
+    height: 600px;
+    width: 480px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.head {
+    width: 100%;
+    height: 35%;
+    background-color: black;
+    position: relative;
+    background-image: url(/assets/Background.jpg);
+    background-size: 100%;
+}
+
+.profile-img img {
+    width: 32%;
+    height: 80%;
+    position: absolute;
+    right: 60px;
+    top: 70px;
+    border: 5px solid rgb(255, 255, 255, .6);
+    z-index: 1;
+    filter: grayscale(50%);
+}
+
+.content {
+    width: 90%;
+    height: 60%;
+    border-radius: 4px;
+    margin: 5px auto;
+    background-color: #ffffff;
+    opacity: 0.8;
+}
+
+.text-headline {
+    width: 95%;
+    margin: 20px auto;
+    margin-bottom: 5px;
+    padding: 25px;
+    background-color: #ffffff;
+    opacity: 0.8;
+    color: #51593F;
+}
+
+.text-me {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+    padding-top: 10px;
+    font-family: 'Karla', Arial, sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: .05rem;
+    color: #7F5312;
+    border-top: 1px solid #7F5312 ;
+}
+
+.footer {
+    width: 90%;
+    height: 10%;
+    position: absolute;
+    bottom: 30px;
+    text-align: center;
+}
+
+.footer h3 {
+    margin-top: 15px;
+}
+
+/* --- Media --- */
+
+@media (max-width: 420px) {
+    .text-me {
+      font-size: 1rem;
+   }
+   .text-headline {
+    padding-bottom: 10px;
+   }
+}
+
+
