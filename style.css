@@ -45,6 +45,7 @@ i {
 i:hover {
     color: #51593F;
     transform: scale(1.2);
+    box-shadow: 0 0 6px #51593F;
 }
 
 
@@ -72,7 +73,7 @@ i:hover {
     position: absolute;
     right: 60px;
     top: 70px;
-    border: 5px solid rgb(255, 255, 255, .3);
+    border: 5px solid rgba(255, 255, 255, 0.8);
     border-radius: 8px;
     z-index: 1;
     filter: grayscale(50%);
@@ -84,7 +85,7 @@ i:hover {
     border-radius: 4px;
     margin: 5px auto;
     background-color: #ffffff;
-    opacity: 0.8;
+    opacity: 1;
 }
 
 .text-headline {
@@ -113,13 +114,18 @@ i:hover {
 }
 
 .footer {
-    width: 90%;
+    width: 60%;
     height: 12%;
     position: absolute;
     bottom: 20px;
+    left: 100px;
     text-align: center;
     opacity: .5;
 }
+
+.footer:hover {
+    box-shadow: 0 0 6px #51593F;
+} 
 
 .footer:hover {
     opacity: 1;
@@ -131,12 +137,17 @@ i:hover {
 
 /* --- Media --- */
 
-@media (max-width: 420px) {
+@media (max-width: 480px) {
     .text-me {
-      font-size: 1rem;
+      font-size: 1.1rem;
    }
    .text-headline {
     padding-bottom: 10px;
+   }
+   .profile-img img {
+    width: 32%;
+    height: 70%;
+    top: 90px;
    }
 }
 
